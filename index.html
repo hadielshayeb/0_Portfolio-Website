@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Hadi | Fractional CTO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
+    <h1>Hi, I'm Hadi 👨‍💻</h1>
+    <p>I help startups build the right tech at the right time.</p>
     <nav>
-      <a href="#about">about</a>
-      <a href="projects.html">projects</a>
-      <a href="#contact">contact</a> <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <h1>Hi, I'm Hadi!</h1>
   </header>
 
   <section id="about">
-    <h2>I’m a Fractional CTO. I love designing digital experiences.</h2>
+    <h2>What I Do</h2>
+    <p>I provide strategic tech leadership for startups that need a CTO—but not full-time. From product vision to scaling teams, I help you grow smart.</p>
+  </section>
+
+  <section id="services">
+    <h2>How I Can Help</h2>
+    <ul>
+      <li>CTO-as-a-Service</li>
+      <li>Startup Tech Audits</li>
+      <li>Hiring & Mentorship</li>
+      <li>Infrastructure & DevOps Strategy</li>
+    </ul>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <div id="project-list"></div>
+    <h2>Startups I’ve Helped</h2>
+    <ul id="project-list"></ul>
+    <input type="text" id="projectInput" placeholder="Add a new project..." />
     <button onclick="addProject()">Add Project</button>
+    <br /><br />
+    <input type="number" id="updateIndex" placeholder="Index to update" />
+    <input type="text" id="newProjectName" placeholder="New name" />
+    <button onclick="updateProject()">Update Project</button>
+  </section>
+
+  <section id="motivation">
+    <h2>Need a Boost?</h2>
+    <button onclick="showMessage()">Get a Cool Message</button>
+    <p id="messageOutput"></p>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Founders Say</h2>
+    <blockquote>“Hadi was a game-changer for our tech roadmap.” — Jane, CEO</blockquote>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email me at hadi@projectr.dev</p>
+    <h2>Let’s Chat</h2>
+    <p>📧 hadi@projectr.dev</p>
+    <a href="https://linkedin.com/in/your-profile" target="_blank">Connect on LinkedIn</a>
   </section>
 
   <script src="script.js"></script>
